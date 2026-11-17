@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", "Noto Sans Ethiopic", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "DM Sans", "Noto Sans Ethiopic", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Signature KEVLAR TECH Royal Cobalt & Kevlar Gold backgrounds */
+.bg-kevlar-hero {
+  background-color: #060f29;
+  background-image:
+    radial-gradient(60% 55% at 78% 36%, rgba(234, 179, 8, 0.15), transparent 70%),
+    radial-gradient(58% 60% at 16% 14%, rgba(37, 99, 235, 0.34), transparent 68%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 48px 48px, 48px 48px;
+}
+
+.bg-kevlar-light {
+  background-color: #f1f5fc;
+  background-image:
+    radial-gradient(55% 45% at 88% 12%, rgba(29, 78, 216, 0.065), transparent 70%),
+    radial-gradient(50% 45% at 10% 85%, rgba(217, 155, 30, 0.055), transparent 70%),
+    radial-gradient(rgba(15, 39, 107, 0.085) 1px, transparent 1px);
+  background-size: 100% 100%, 100% 100%, 24px 24px;
+}
+
+.bg-kevlar-surface {
+  background-color: #ffffff;
+  background-image:
+    radial-gradient(65% 40% at 50% 0%, rgba(29, 78, 216, 0.045), transparent 72%),
+    linear-gradient(180deg, #ffffff 0%, #f7faff 55%, #ffffff 100%);
+}
+
+.bg-kevlar-dark {
+  background-color: #060f29;
+  background-image:
+    radial-gradient(55% 60% at 14% 18%, rgba(29, 78, 216, 0.3), transparent 70%),
+    radial-gradient(45% 50% at 88% 82%, rgba(234, 179, 8, 0.11), transparent 70%),
+    repeating-linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.02) 0px,
+      rgba(255, 255, 255, 0.02) 1px,
+      transparent 1px,
+      transparent 16px
+    );
+}
+
+.bg-kevlar-quote {
+  background-color: #091844;
+  background-image:
+    radial-gradient(85% 75% at 100% 0%, rgba(234, 179, 8, 0.16), transparent 65%),
+    radial-gradient(75% 75% at 0% 100%, rgba(37, 99, 235, 0.28), transparent 65%),
+    linear-gradient(145deg, #0b1f5b 0%, #071235 65%, #0b1b4a 100%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

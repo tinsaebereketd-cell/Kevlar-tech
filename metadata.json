@@ -1,0 +1,6 @@
+{
+  "name": "Meridian Tech Systems",
+  "description": "Computer hardware and software maintenance, 4K TV and projector repair, certified pre-owned PCs, and IT consulting office.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

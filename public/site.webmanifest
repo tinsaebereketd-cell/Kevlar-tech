@@ -1,0 +1,16 @@
+theme
+  "name": "KEVLAR TECH — Hardware Lab, Used PCs & IT Consulting",
+  "short_name": "KEVLAR TECH",
+  "description": "Computer hardware and software maintenance, 4K TV and projector repair, certified pre-owned PCs, and IT consulting in Bishoftu, Ethiopia.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#060f29",
+  "themetheme_color": "#060f29",
+  "icons": [
+    {
+      "src": "/assets/aistudio/1794814611168_f37733fc.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+}
